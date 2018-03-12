@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <title>欢迎来到我的简历</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    
+</head>
+
+<body onload="createCode()">
+    <div id="login_frame">
+        <form method="post" action="login.js">
+            <p>
+                <label class="label_input">用户名</label>
+                <input type="text" id="iname" class="text_field" />
+            </p>
+            <p>
+                <label class="label_input">密码</label>
+                <input type="password" id="ipw" class="text_field" />
+            </p>
+            <p>
+                <label class="code" id="code" onclick="createCode()"></label>
+            
+            <a href="#" class="changecode" onclick="createCode()">看不清换一张</a></label></p>
+            <p>
+                <input type="text" id="inputCode" class="text_field" placeholder="请输入验证码" style="color: rgba(0,25,25,0.3);"/>
+            </p>
+            <div  class="btn_login" type="submit" onclick="tomain()">登录
+            </div>
+<!--             <div id="login_control">
+                <label class="btn_login" type="submit" onclick="tomain()">登录</label> 
+            </div> -->
+        </form>
+    </div>
+    <script type="text/javascript" src="login.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+</body>
+
+</html>
+
+</html>
